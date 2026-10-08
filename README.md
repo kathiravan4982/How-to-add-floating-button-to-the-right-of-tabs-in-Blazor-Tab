@@ -2,16 +2,18 @@
 
 ## Overview
 
-This sample demonstrates how to display a floating button on the right side of the tab header area in the Syncfusion [Blazor Tabs](https://www.syncfusion.com/blazor-components/blazor-tabs) component. The application uses the Blazor Tabs component together with a Syncfusion Blazor Button component to position the button alongside the tab headers. This approach provides users with a prominent action control without placing it inside an individual tab's content area.
+This sample demonstrates how to display a floating button on the right side of the tab header area in the Syncfusion [Blazor Tabs](https://www.syncfusion.com/blazor-components/blazor-tabs) component. The application uses the Blazor Tabs component together with a Syncfusion Blazor Button component to position the button alongside the tab headers and add a new tab when the button is clicked. This approach provides users with a prominent action control without placing it inside an individual tab's content area.
 
 ## Key Features
 
 - Uses the Syncfusion Blazor `SfTab` component to display content in separate tabs.
 - Uses `TabItems` to define the collection of tabs rendered by the component.
-- Uses individual `TabItem` components to organize separate sections of content.
-- Defines the visible text for each tab using the `TabHeader` component.
-- Uses a Syncfusion Blazor Button component to provide the floating button.
-- Positions the button on the right side of the tab header area.
+- Uses individual `TabItem` components to define the initial content tab and the button tab.
+- Defines the visible text for the initial tab using the `TabHeader` component.
+- Uses the Syncfusion Blazor `SfButton` component to provide the floating button.
+- Uses `HeaderTemplate` to render the button alongside the tab headers.
+- Handles the button click through the `@onclick` event.
+- Uses the `AddTab` method to add a new tab when the button is clicked.
 - Keeps the button separate from the content displayed within individual tabs.
 - Provides a convenient action that remains accessible alongside the tab headers.
 
@@ -37,7 +39,7 @@ This sample demonstrates how to display a floating button on the right side of t
 5. Build the solution.
 6. Run the application using `Ctrl+F5`.
 7. Open the application URL displayed by Visual Studio after launch.
-8. View the floating button displayed on the right side of the tab header area.
+8. Verify that the floating button is displayed on the right side of the tab header area.
 
 **Visual Studio Code**
 
@@ -63,7 +65,7 @@ dotnet run
 ```
 
 7. Open the local URL displayed in the terminal after the application starts.
-8. View the floating button displayed on the right side of the tab header area.
+8. Verify that the floating button is displayed on the right side of the tab header area.
 
 ## Support and Feedback
 

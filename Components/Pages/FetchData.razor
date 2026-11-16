@@ -1,4 +1,5 @@
-﻿@page "/fetchdata"
+@page "/fetchdata"
+
 @using AddFloatingButton.Data
 @inject WeatherForecastService ForecastService
 
@@ -18,9 +19,9 @@ else
         <thead>
             <tr>
                 <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
+                <th class="text-end">Temp. (C)</th>
+                <th class="text-end">Temp. (F)</th>
+                <th class="text-end">Summary</th>
             </tr>
         </thead>
         <tbody>
@@ -28,9 +29,9 @@ else
             {
                 <tr>
                     <td>@forecast.Date.ToShortDateString()</td>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
+                    <td class="text-end">@forecast.TemperatureC</td>
+                    <td class="text-end">@forecast.TemperatureF</td>
+                    <td class="text-end">@forecast.Summary</td>
                 </tr>
             }
         </tbody>

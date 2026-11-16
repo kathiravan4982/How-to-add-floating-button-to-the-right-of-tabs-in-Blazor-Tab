@@ -4,7 +4,8 @@ This sample explains about how to add floating button to the right of tabs in Bl
 
 ## Prerequisites
 
-* Visual Studio 2022
+* Visual Studio 2022 with .NET 10 SDK
+* [.NET 10](https://dotnet.microsoft.com/download/dotnet/10.0)
 
 ## How to run the project
 

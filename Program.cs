@@ -1,4 +1,5 @@
 using AddFloatingButton.Components;
+using Syncfusion.Blazor;
 
 var builder = WebApplication.CreateBuilder(args);
 
